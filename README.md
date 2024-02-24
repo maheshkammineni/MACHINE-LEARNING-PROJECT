@@ -33,8 +33,8 @@ To create version/commite all changes by git
 git commit -m "message" '''
 
 To setup CI/CD pipeline we need three information:
-1. Heroku_email=  maheshkammineni@yahoo.com
-2. Heroku_APIkey=  b1a672df-b167-4a66-be59-30c54721b0ba
+1. Heroku_email=  dspractice.mk@yahoo.com
+2. Heroku_APIkey=  from api key app
 3. Heroku_Appname= ml-regression-app1
 
 
