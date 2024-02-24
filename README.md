@@ -8,7 +8,14 @@
 '''Creating conda environment:
 conda create -p venv python==3.7 -y'''
 '''
-conda activate venv/
+
+''' activate conda environment
+
+conda activate venv/ 
+conda.bat activate
+'''
+
+
 
 pip install -r requirements.txt '''
 
@@ -24,6 +31,32 @@ To check allversion maintained by git
 git log
 To create version/commite all changes by git
 git commit -m "message" '''
+
+To setup CI/CD pipeline we need three information:
+1. Heroku_email=  maheshkammineni@yahoo.com
+2. Heroku_APIkey=  b1a672df-b167-4a66-be59-30c54721b0ba
+3. Heroku_Appname= ml-regression-app1
+
+
+Build docker image
+'''
+docker buid -t <image_name>:<tag_name>
+'''
+note: docker name image shpuld be in lowercase
+
+To list docker images:
+docker images
+
+To run the docker image
+docker run -p 5000:5000 -e PORT=5000 2a0673058b3f
+
+To check running container in docker
+'''
+docker ps
+'''
+TO stop docker image: 
+
+docker stop comtainer_id
 
 
 
