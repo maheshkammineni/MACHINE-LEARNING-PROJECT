@@ -58,8 +58,10 @@ TO stop docker image:
 
 docker stop comtainer_id
 
-
-
+To  install the setup file
+""
+python setup.py install
+""
 
 
 
