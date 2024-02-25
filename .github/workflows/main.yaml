@@ -22,7 +22,7 @@ jobs:
         # The email address associated with your Heroku account
         # if you don't want to use repository secrets (which is recommneded) you can do:
         # email: my.email@example.com
-        email: ${{secrets.Heroku_EMAIL}}
+        email: ${{secrets.HEROKU_EMAIL}}
 
         # hEROKU API KEY ASSOCIATED WITH PROVIDED USER EMAIL
         #Api key is available under you heroku account settings
