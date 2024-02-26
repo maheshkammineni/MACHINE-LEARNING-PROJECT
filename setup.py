@@ -10,11 +10,9 @@ Description = "This is the first complete project housing price prediction"
 Pacakges = ['housing']
 REQUIREMENT_FILE_NAME = "requirements.txt"
 
-def get_requirements_list()->List[str]:
-    "This function going to return list of requirement mention in requirements.txt file"
-
-    with open(REQUIREMENT_FILE_NAME) as requirements_file:
-        return requirements_file.readlines().pop("-e .") # return is going to return a list which contain name of libraries.
+def get_requirements_list():
+    with open("requirements.txt", "r") as requirements_file:
+        return [line.strip() for line in requirements_file if not line.startswith("-e .")]# return is going to return a list which contain name of libraries.
     
     
 
